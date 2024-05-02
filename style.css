@@ -460,16 +460,16 @@
 
 .parallax-container {
     position: relative;
-    height: 500px; /* A parallax hatás láthatóságának beállítása */
+    height: 500px; 
     overflow: hidden;
 }
 
 .parallax {
-    background-image: url('kepek/taj.jpg'); /* Háttérkép beállítása */
+    background-image: url('kepek/taj.jpg'); 
     background-size: cover;
-    background-attachment: fixed; /* Parallax hatás beállítása */
-    height: 100%; /* Teljes méretű háttér */
-    transform: translateZ(0); /* Parallax hatás mobil eszközökön */
+    background-attachment: fixed; 
+    height: 100%; 
+    transform: translateZ(0); 
 }
 
 .content {
