@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="kepek/favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>SZS Munkái</title>   
+</head>
+<body class="dark-mode">
+    
+    <div class="menu">
+        <button onclick="scrollToSection()" id="asd" class="szia">TO DO</button>
+    <ul>
+        <li><a href="https://sites.google.com/view/mytasks-szs/web?authuser=0">Web</a></li>
+        <li><a href="https://sites.google.com/view/mytasks-szs/python?authuser=0">Python</a></li>
+        <li><a href="https://sites.google.com/view/mytasks-szs/h%C3%A1l%C3%B3zat?authuser=0">Hálózat</a></li>
+        <li><a href="https://sites.google.com/view/mytasks-szs/projekt?authuser=0">Project</a></li>
+        <li><a href="https://sites.google.com/view/mytasks-szs/digikult?authuser=0">Digikult</a></li>
+    </ul>
+    </div>
+
+    <h2 id="cim">SZS Webszerkesztési munkáim</h2>
+    <h3 id="datum">2024. március-június</h3>
+
+    <div class="container">
+        <div class="icon-container" onclick="toggleNightMode()">
+          <span id="icon" class="sun-icon">&#9728;</span> 
+        </div>
+      </div>
+
+    <div class="cards">
+        <div class="card">
+            <img src="kepek/kep.png" alt="" id="kep1">
+            <div class="block"><h4>Blog</h4></div>
+            <h3>Community-think</h3>
+            <p>Azon ötletelünk egy havi programtervező csapatmegbeszélésen, hogy</p>
+            <button id="b1" onclick="alert('Hamarosan!')">TOVÁBB</button>
+        </div>
+        
+        <div class="card" id="kakk">
+            <img src="kepek/kep2.png" alt="" id="kep2">
+            <div class="block2"><h4>Események</h4></div>
+            <h3>Céltudatosság</h3>
+            <p>Szeretnéd megtartani a téli sötétségben is a kreatívitásod és...</p>
+            <button id="b2" onclick="alert('Hamarosan!')">JELENZKEZEM</button>
+        </div>
+        
+        <div class="card">
+            <img src="kepek/kep3.png" alt="" id="kep3">
+            <div class="block3"><h4>Ajánlatok</h4></div>
+            <h3>Privát irodák!</h3>
+            <p>Itt az új év, bővült a csapatod és kezditek kinőni az eddigi irodátokat?</p>
+            <button id="b3" onclick="alert('Hamarosan!')">TOVÁBB</button>
+        </div>
+    </div>
+    
+    <div id="toast" class="toast">
+        <button class="close-button" onclick="closeToast()">X</button>
+        <p id="szoveg">Helló! Szegedi Sándor vagyok 10.B osztályos tanuló</p>
+    </div>
+
+
+<div id="chatpanel-btn" class="chatpanel-btn" onclick="toggleChatPanel()">
+    <span>Chat</span>
+  </div>
+  
+
+  <div id="chatpanel" class="chatpanel">
+    <div class="chat-header">
+      <span>Chat</span>
+      <button class="close-btn" onclick="toggleChatPanel()">X</button>
+    </div>
+    <div class="chat-body" id="chat-body">
+
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="message-input" placeholder="Írj üzenetet...">
+      <button onclick="sendMessage()">Küldés</button>
+    </div>
+  </div>
+
+
+    <h3>PRÓBÁLD KI! Egyeztessünk időpontot: légy vendégünk néhány órára és egy jó kávéra!</h3>
+
+    <div class="container">
+        <h1 id="targetSection">ToDo List</h1>
+        <form id="todoForm" onsubmit="addTodoItem(event)">
+          <input type="text" id="todoInput" placeholder="Add meg a ToDo-t...">
+          <button type="submit">Hozzáadás</button>
+        </form>
+        <ul id="todoList" class="todo-list">
+        </ul>
+        <ul id="doneList" class="done-list">
+        </ul>
+      </div>
+    
+<p class="baa">.</p>
+
+<div class="parallax-container">
+    <div class="parallax"></div>
+    <div class="content">
+        <h1>Üdvözöllek a weboldalon!</h1>
+        <p>Ez egy példa a parallax hatás alkalmazására.</p>       
+    </div>
+</div>
+      
+
+</body>
+</html>
